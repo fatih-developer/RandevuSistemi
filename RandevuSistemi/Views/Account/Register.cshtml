@@ -1,0 +1,56 @@
+﻿@model RandevuSistemi.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<div class="row">
+
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <h2>Kayıt Sayfası</h2>
+        <form asp-action="Register">
+            <div class="form-group">
+                <label asp-for="Username"></label>
+                <span asp-validation-for="Username" class="text-danger"></span>
+                <input asp-for="Username" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName"></label>
+                <span asp-validation-for="LastName" class="text-danger"></span>
+                <input asp-for="LastName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Color"></label>
+                <span asp-validation-for="Color" class="text-danger"></span>
+                <input asp-for="Color" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+                <input asp-for="Password" class="form-control" />
+            </div>
+            <div class="form-group form-check">
+                <input asp-for="IsDentist" type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" asp-for="IsDentist"></label>
+            </div>
+            <button type="submit" class="btn btn-primary">Kayıt</button>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+
+
+</div>
+
+
